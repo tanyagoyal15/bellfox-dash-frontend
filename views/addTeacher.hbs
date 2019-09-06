@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BellFox-HOD</title>
+    <title>BellFox-Teachers</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -14,6 +15,9 @@
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
@@ -28,6 +32,12 @@
     <!-- Font Awesome FREE Icons -->
     <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
@@ -333,12 +343,12 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">All HODs</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Add Teacher</li>
                                     </ol>
                                 </nav>
-                                <h1 class="m-0">HODs</h1>
+                                <h1 class="m-0">Teachers</h1>
                             </div>
-                            <a href="/addHOD" class="btn btn-success ml-3">Add HOD</a>
+                            <!-- <a href="" class="btn btn-success ml-3">Add Student</a> -->
                         </div>
                     </div>
 
@@ -347,381 +357,275 @@
                             <div class="card-header">
                                 <div class="heading-layout">
                                     <div class="title">
-                                        <h3>All HOD Data</h3>
+                                        <h3>Add New Teacher</h3>
                                     </div>
                                 </div>
                                 <form class="mg-b-20">
                                     <div class="row search-form">
-                                        <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                                            <input type="text" placeholder="Search by Roll..." class="form-control">
+                                        <div class="col-2 form-group designation name">
+                                            <label class="text-label"></label>
+                                            <select size="1" class="form-control" style="padding: 7%" class="selectpicker form-control" data-style="select-with-transition" title="Select Blood Group" data-size="7" required>
+                                                <option disabled></option>
+                                                <option value="2">Mr</option>
+                                                <option value="3">Mrs</option>
+                                                <option value="4">Ms</option>
+                                            </select>
                                         </div>
-                                        <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                                            <input type="text" placeholder="Search by Name..." class="form-control">
+                                        <div class="col-lg-3 form-group name">
+                                            <label class="text-label">First Name *</label>
+                                            <input type="text" placeholder="" class="form-control" required>
                                         </div>
-                                        <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                                            <input type="text" placeholder="Search by Class..." class="form-control">
+                                        <div class="col-lg-3 form-group name">
+                                            <label class="text-label">Middle Name *</label>
+                                            <input type="text" placeholder="" class="form-control" required>
                                         </div>
-                                        <div class="col-1-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                                            <button type="submit" class="search-btn">Search</button>
+                                        <div class="col-lg-3 form-group">
+                                            <label class="text-label">Last Name *</label>
+                                            <input type="text" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group">
+                                            <label class="text-label">Husband/Father's Name *</label>
+                                            <input type="text" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group gender">
+                                            <label class="text-label">Gender *</label>
+                                            <select size="1" class="form-control" style="padding: 2.5%" class="selectpicker form-control" data-style="select-with-transition" title="Select Section" data-size="7" required>
+                                                <option disabled>Select Gender</option>
+                                                <option value="2">Male</option>
+                                                <option value="3">Female</option>
+                                                <option value="4">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group">
+                                            <label class="text-label">Email *</label>
+                                            <input type="email" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group">
+                                            <label class="text-label">Contact No *</label>
+                                            <input type="tel" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group dob">
+                                            <label class="text-label" for="flatpickrSample01">Date Of Birth</label>
+                                            <input id="flatpickrSample01" type="text" class="form-control" placeholder="Flatpickr example" data-toggle="flatpickr" value="today">
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group">
+                                            <label class="text-label">Aadhar Card Number *</label>
+                                            <input type="text" placeholder="" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group edq">
+                                            <label class="text-label">Educational Qualification *</label>
+                                            <select size="1" class="form-control" style="padding: 2.5%" class="selectpicker form-control" data-style="select-with-transition" title="Select Blood Group" data-size="7" required>
+                                                <option disabled>Select One</option>
+                                                <option value="2">No formal education</option>
+                                                <option value="3">Primary education</option>
+                                                <option value="4">Secondary education or high school</option>
+                                                <option value="5">GED</option>
+                                                <option value="6">Vocational qualification</option>
+                                                <option value="7">Bachelor's degree</option>
+                                                <option value="8">Master's degree</option>
+                                                <option value="9">Doctorate or higher</option>
+                                                <option value="10">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group designation">
+                                            <label class="text-label">Subject *</label>
+                                            <select size="1" class="selectpicker form-control" data-live-search="true" style="padding: 2.5%" data-style="select-with-transition" title="Select Occupation" data-size="7" required>
+                                                <option value="" selected="selected" disabled="disabled">Select Your Subject</option>
+                                                <option value="1">English</option>
+                                                <option value="2">Hindi</option>
+                                                <option value="3">Maths</option>
+                                                <option value="4">Computer</option>
+                                                <optgroup label="Science:">
+                                                    <option value="5">Physics</option>
+                                                    <option value="6">Chemistry</option>
+                                                    <option value="7">Biology</option>
+                                                </optgroup>
+                                                <optgroup label="Social Sciences:">
+                                                    <option value="8">History</option>
+                                                    <option value="9">Geography</option>
+                                                    <option value="10">Civics</option>
+                                                </optgroup>
+                                                <optgroup label="Art:">
+                                                    <option value="11">Dance</option>
+                                                    <option value="12">Music</option>
+                                                    <option value="13">Art & Craft</option>
+                                                    <option value="14">Physical Education</option>
+                                                </optgroup>
+                                                <optgroup label="Languages:">
+                                                    <option value="15">French</option>
+                                                    <option value="16">German</option>
+                                                    <option value="17">Spanish</option>
+                                                </optgroup>
+                                                <option value="18">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-12 form-group">
+                                            <label class="text-label" for="flatpickrSample01">Date Of Joining</label>
+                                            <input id="flatpickrSample01" type="text" class="form-control" placeholder="Flatpickr example" data-toggle="flatpickr" value="today">
+                                        </div>
+
+                                        <section class="parents-guardian-info col-12">
+                                            <div class="heading-layout">
+                                                <h5>Address Information</h5>
+                                            </div>
+                                            <form class="mg-b-20">
+                                                <div class="row search-form address">
+                                                     <p>Current Address</p>
+                                                    <div class="col-12 form-group">
+                                                        <label class="text-label">Address *</label>
+                                                        <input type="text" placeholder="" class="form-control" name="currentaddress1" required>
+                                                    </div>
+                                                    <div class="col-12 form-group">
+                                                        <!-- <label>Middle Name </label> -->
+                                                        <input type="text" placeholder="" class="form-control" name="currentaddress2" required>
+                                                    </div>
+                                                    <div class="col-4 form-group state">
+                                                        <label class="text-label">State *</label>
+                                                        <select id="countrySelect" size="1" name="currentstate" class="form-control" onchange="makeSubmenu(this.value)" style="padding: 4%">
+                                                            <option value="" disabled selected>Choose State</option>
+                                                            <option>Andhra Pradesh</option>
+                                                            <option>Arunachal Pradesh</option>
+                                                            <option>Assam</option>
+                                                            <option>Bihar</option>
+                                                            <option>Chandigarh</option>
+                                                            <option>Chhattisgarh</option>
+                                                            <option>Delhi</option>
+                                                            <option>Goa</option>
+                                                            <option>Gujarat</option>
+                                                            <option>Haryana</option>
+                                                            <option>Himachal Pradesh</option>
+                                                            <option>Jammu and Kashmir</option>
+                                                            <option>Jharkhand</option>
+                                                            <option>Karnataka</option>
+                                                            <option>Kerala</option>
+                                                            <option>Madhya Pradesh</option>
+                                                            <option>Maharashtra</option>
+                                                            <option>Manipur</option>
+                                                            <option>Meghalaya</option>
+                                                            <option>Mizoram</option>
+                                                            <option>Nagaland</option>
+                                                            <option>Odisha</option>
+                                                            <option>Punjab</option>
+                                                            <option>Rajasthan</option>
+                                                            <option>Sikkim</option>
+                                                            <option>Tamil Nadu</option>
+                                                            <option>Telangana</option>
+                                                            <option>Tripura</option>
+                                                            <option>Uttar Pradesh</option>
+                                                            <option>Uttarakhand</option>
+                                                            <option>West Bengal</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4 form-group city">
+                                                        <label class="text-label">City *</label>
+                                                        <select id="citySelect" size="1" name="currentcity" class="form-control" style="padding: 4%">
+                                                            <option value="" disabled selected>Choose City</option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4 form-group">
+                                                        <label class="text-label">Zip Code *</label>
+                                                        <input type="text" placeholder="" class="form-control" name="currentcode" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row search-form address">
+                                                     <p>Permanent Address</p>
+                                                    <div class="col-12 form-group">
+                                                        <input type="checkbox" name="permanenttoo" onclick="FillPermanent(this.form)">
+                                                        <em>Same as Above.</em>
+                                                    </div>
+                                                    <div class="col-12 form-group">
+                                                        <label class="text-label">Address *</label>
+                                                        <input type="text" placeholder="" class="form-control" name="permanentaddress1" required>
+                                                    </div>
+                                                    <div class="col-12 form-group">
+                                                        <input type="text" placeholder="" class="form-control" name="permanentaddress2" required>
+                                                    </div>
+                                                    <div class="col-4 form-group state">
+                                                        <label class="text-label">State *</label>
+                                                        <select id="countrySelect2" size="1" class="form-control" name="permanentstate" onchange="makeSubmenu2(this.value)" style="padding: 4%">
+                                                            <option value="" disabled selected>Choose State</option>
+                                                            <option>Andhra Pradesh</option>
+                                                            <option>Arunachal Pradesh</option>
+                                                            <option>Assam</option>
+                                                            <option>Bihar</option>
+                                                            <option>Chandigarh</option>
+                                                            <option>Chhattisgarh</option>
+                                                            <option>Delhi</option>
+                                                            <option>Goa</option>
+                                                            <option>Gujarat</option>
+                                                            <option>Haryana</option>
+                                                            <option>Himachal Pradesh</option>
+                                                            <option>Jammu and Kashmir</option>
+                                                            <option>Jharkhand</option>
+                                                            <option>Karnataka</option>
+                                                            <option>Kerala</option>
+                                                            <option>Madhya Pradesh</option>
+                                                            <option>Maharashtra</option>
+                                                            <option>Manipur</option>
+                                                            <option>Meghalaya</option>
+                                                            <option>Mizoram</option>
+                                                            <option>Nagaland</option>
+                                                            <option>Odisha</option>
+                                                            <option>Punjab</option>
+                                                            <option>Rajasthan</option>
+                                                            <option>Sikkim</option>
+                                                            <option>Tamil Nadu</option>
+                                                            <option>Telangana</option>
+                                                            <option>Tripura</option>
+                                                            <option>Uttar Pradesh</option>
+                                                            <option>Uttarakhand</option>
+                                                            <option>West Bengal</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4 form-group city">
+                                                        <label class="text-label">City *</label>
+                                                        <select id="citySelect2" size="1" name="permanentcity" class="form-control" style="padding: 4%">
+                                                            <option value="" disabled selected>Choose City</option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4 form-group">
+                                                        <label class="text-label">Zip Code *</label>
+                                                        <input type="text" placeholder="" class="form-control" name="permanentcode" required>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </section>
+
+                                        <section class="parents-guardian-info col-12">
+                                            <form class="mg-b-20">
+                                                <div class="row search-form experience">
+                                                    <div class="col-12 form-group">
+                                                        <label class="text-label">Experience*</label>
+                                                        <div class="form-control experience-years">
+                                                            <div class="years">
+                                                                <input type="number" min="0" placeholder="4" id="years" style="border: none; outline: none; width: 100% ; height: 40px;" required>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <input type="number" placeholder="" class="form-control" required> -->
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </section>
+
+                                        <div class="col-12 form-group mg-t-30">
+                                            <label class="text-label">Upload Photo (150px X 150px)</label>
+                                            <input type="file" class="form-control-file">
+                                        </div>
+                                        <div class="col-12 form-group mg-t-8">
+                                            <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark save-btn">Save</button>
+                                            <button type="reset" class="btn-fill-lg bg-blue-dark btn-hover-yellow reset-btn">Reset</button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-
-
-                            <div class="table-responsive border-bottom" data-toggle="lists" data-lists-values='["js-lists-values-employee-name"]'>
-
-                                <table class="table mb-0 thead-border-top-0">
-                                    <thead>
-                                        <tr>
-
-                                            <th style="width: 18px;">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-toggle-check-all" data-target="#staff" id="customCheckAll">
-                                                    <label class="custom-control-label" for="customCheckAll"><span class="text-hide">Toggle all</span></label>
-                                                </div>
-                                            </th>
-
-                                            <th>Photo</th>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Last Active</th>
-                                            <th>Arrival Time</th>
-                                            <th>Departure time</th>
-                                            <th>Designation</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="list" id="students">
-
-                                        <tr class="selected">
-
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" checked="" id="customCheck1_1">
-                                                    <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
-                                                </div>
-                                            </td>
-
-                                            <td>
-                                                <div class="avatar avatar-xs mr-2">
-                                                    <a href="/details.html"><img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
-                                                </div> 
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Rahul Gupta</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                    <div class="media-body d-flex justify-content-center">
-                                                        <span class="js-lists-values-employee-email">rahulgupta@gmail.com</span>
-                                                    </div>
-                                                </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">12:49 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                        <span class="js-lists-values-employee-designation">Physics</span>
-                                                    </div>
-                                                </td>
-
-                                            <td style="display: none;">
-
-                                                <div class="media align-items-center">
-                                                    <div class="avatar avatar-xs mr-2">
-                                                        <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
-                                                    </div>
-                                                    <div class="media-body">
-
-                                                        <span class="js-lists-values-employee-name">Michael Smith</span>
-
-                                                    </div>
-                                                </div>
-
-                                            </td>
-
-                                            <td style="display: none;">
-                                                <div class="media align-items-center">
-                                                    <a href="">Black Ops</a>
-                                                    <a href="#" class="rating-link"><i class="material-icons ml-2">star</i></a>
-                                                </div>
-                                            </td>
-
-                                            <td style="display: none;">12</td>
-                                            <td style="display: none;"><span class="badge badge-warning">ADMIN</span></td>
-                                            <td style="display: none;"><small class="text-muted">3 days ago</small></td>
-                                            <td style="display: none;">&dollar;12,402</td>
-                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck2_1">
-                                                    <label class="custom-control-label" for="customCheck2_1"><span class="text-hide">Check</span></label>
-                                                </div>
-                                            </td>
-
-                                            <td>
-                                                <div class="avatar avatar-xs mr-2">
-                                                    <a href="/details.html"><img src="assets/images/avatar/green.svg" alt="Avatar" class="avatar-img rounded-circle"></a>
-                                                </div> 
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Akash Sharma</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                    <div class="media-body d-flex justify-content-center">
-                                                        <span class="js-lists-values-employee-email">akashsharma@gmail.com</span>
-                                                    </div>
-                                                </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">12:12 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:25 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-designation">Mathematics</span>
-                                                </div>
-                                            </td>
-                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck3_1">
-                                                    <label class="custom-control-label" for="customCheck3_1"><span class="text-hide">Check</span></label>
-                                                </div>
-                                            </td>
-
-
-                                            <td>
-                                                <div class="avatar avatar-xs mr-2">
-                                                    <a href="/details.html"><img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
-                                                </div> 
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Niharika Singh</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">niharikasingh@gmail.com</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">9:45 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:45 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-designation">Chemistry</span>
-                                                </div>
-                                            </td>
-
-                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
-                                        </tr>
-
-                                        <tr class="selected">
-
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" checked="" id="customCheck1_2">
-                                                    <label class="custom-control-label" for="customCheck1_2"><span class="text-hide">Check</span></label>
-                                                </div>
-                                            </td>
-
-                                            <td>
-                                                <div class="avatar avatar-xs mr-2">
-                                                    <a href="/details.html"><img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
-                                                </div> 
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Karan Goyal</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">karangoyal@gmail</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">1:20 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:30 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-designation">English</span>
-                                                </div>
-                                            </td>
-
-                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck2_2">
-                                                    <label class="custom-control-label" for="customCheck2_2"><span class="text-hide">Check</span></label>
-                                                </div>
-                                            </td>
-
-
-                                            <td>
-                                                <div class="avatar avatar-xs mr-2">
-                                                    <a href="/details.html"><img src="assets/images/avatar/green.svg" alt="Avatar" class="avatar-img rounded-circle"></a>
-                                                </div> 
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Ananya Goyal</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">anayagoyal@gmail.com</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">11:15 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:42 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-designation">English</span>
-                                                </div>
-                                            </td>
-
-                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck3_2">
-                                                    <label class="custom-control-label" for="customCheck3_2"><span class="text-hide">Check</span></label>
-                                                </div>
-                                            </td>
-
-
-                                            <td>
-                                                <div class="avatar avatar-xs mr-2">
-                                                    <a href="/detail.html"><img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
-                                                </div> 
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Suhani Jain</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">suhanijain@gmail.com</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">10:30 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:20 AM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-designation">Hindi</span>
-                                                </div>
-                                            </td>
-
-                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="card-body text-right">
-                                15 <span class="text-muted">of 1,430</span> <a href="#" class="text-muted-light"><i class="material-icons ml-1">arrow_forward</i></a>
-                            </div>
-
-
                         </div>
                     </div>
 
 
                 </div>
                 <!-- // END drawer-layout__content -->
-
                 <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
                     <div class="mdk-drawer__content">
                         <div class="sidebar sidebar-light sidebar-left simplebar" data-simplebar>
@@ -786,7 +690,7 @@
                                                             <span class="sidebar-menu-text">Admin</span>
                                                         </a>
                                                     </li>
-                                                    <li class="sidebar-menu-item active open">
+                                                    <li class="sidebar-menu-item ">
                                                             <a class="sidebar-menu-button" data-toggle="collapse" href="#management_menu">
                                                                 <span class="sidebar-menu-text">Management</span>
                                                                 <span class="ml-auto d-flex align-items-center">
@@ -809,14 +713,14 @@
                                                                         <span class="sidebar-menu-text">Vice Principal</span>
                                                                     </a>
                                                                 </li>
-                                                                <li class="sidebar-menu-item active">
+                                                                <li class="sidebar-menu-item ">
                                                                     <a class="sidebar-menu-button" href="/hods">
                                                                         <span class="sidebar-menu-text">HOD</span>
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                     </li>
-                                                    <li class="sidebar-menu-item ">
+                                                    <li class="sidebar-menu-item active">
                                                             <a class="sidebar-menu-button" href="/teachers">
                                                                 <span class="sidebar-menu-text">Teachers</span>
                                                             </a>
@@ -899,12 +803,14 @@
     </div>
 
     <!-- jQuery -->
-    <script src="assets/vendor/jquery.min.js"></script>
+    <!-- <script src="assets/vendor/jquery.min.js"></script> -->
 
     <!-- Bootstrap -->
     <script src="assets/vendor/popper.min.js"></script>
     <script src="assets/vendor/bootstrap.min.js"></script>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
     <!-- Simplebar -->
     <script src="assets/vendor/simplebar.min.js"></script>
 
@@ -943,13 +849,103 @@
 
     <!-- Chart.js Samples -->
     <script src="assets/js/page.staff.js"></script>
+    <script type="text/javascript">
 
-    <script>
-        $('.list tr').click(function(){
-            window.location = "details.html";
+        var citiesByState = {
+        // Andhra-Pradesh  : ["Visakhapatnam", "Vijayawada", "Guntur"],
+        // Arunachal-Pradesh : ['Itanagar'],
+        Assam : ["Guwahati", "Silchar", "Dibrugarh", "Nagaon"],
+        Bihar : ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Biharsharif"],
+        Chandigarh : ['Chandigarh'],
+        Chhattisgarh : ["Raipur", "Bhilai Nagar", "Korba", "Bilaspur", "Durg"],
+        Delhi : ['Delhi'],
+        Goa : ['Panaji'],
+        Gujarat : ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Bhavnagar"],
+        Haryana : ["Faridabad", "Gurgaon", "Rohtak", "Hisar", "Panipat"],
+        // Himachal-Pradesh : ['Shimla'],
+        // Jammu-Kashmir : ["Srinagar", "Jammu", "Anantnag"],
+        Jharkhand : [   "Dhanbad", "Ranchi", "Jamshedpur", "Bokaro Steel", "Mango" ],
+        Karnataka : ["Bangalore", "Hubli and Dharwad", "Mysore", "Gulbarga", "Belgaum"],
+        Kerala : ["Trivandrum", "Kochi", "Kozhikode", "Kollam", "Thrissur"],
+        // Madhya-Pradesh  : ["Indore", "Bhopal", "Jabalpur",  "Gwalior", "Ujjain"],
+        Maharashtra : ["Mumbai",  "Pune", "Nagpur", "Thane", "Pimpri and Chinchwad"],
+        Manipur : ['Imphal'],
+        Meghalaya : ['Shillong'],
+        Mizoram : ['Aizawl'],
+        Nagaland : ['Dimapur'],
+        Odisha : ["Bhubaneswar", "Cuttack", "Brahmapur Town", "Raurkela", "Puri Town"],
+        Punjab : ["Ludhiana", "Amritsar", "Jalandhar", "Patiala", "Bathinda"],
+        Rajasthan : ["Jaipur", "Jodhpur", "Kota", "Bikaner", "Ajmer"],
+        Sikkim  : ['Gangtok'],
+        // Tamil-Nadu : [  "Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem"],
+        // Telangana : [   "Hyderabad", "Warangal"],
+        Tripura : ['Agartala'],
+        // Uttar-Pradesh : ["Lucknow", "Kanpur", "Ghaziabad", "Agra", "Meerut"],
+        // Uttarakhand : ["Dehradun", "Hardwar", "Haldwani and Kathgodam", "Rudrapur"],
+        // West-Bengal : ["Kolkata", "Haora", "Durgapur", "Asansol", "Siliguri"]
+
+
+
+        // Odisha: ["Bhubaneswar","Puri","Cuttack"],
+        // Maharashtra: ["Mumbai","Pune","Nagpur"],    
+        // Kerala: ["kochi","Kanpur"]
+        }
+
+        function makeSubmenu(value) {
+        if(value.length==0) document.getElementById("citySelect").innerHTML = "<option></option>";
+        else {
+        var citiesOptions = "";
+        for(cityId in citiesByState[value]) {
+        citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+        }
+        document.getElementById("citySelect").innerHTML = citiesOptions;
+        }
+        }
+        function displaySelected() { var country = document.getElementById("countrySelect").value;
+        var city = document.getElementById("citySelect").value;
+        alert(country+"\n"+city);
+        }
+        function resetSelection() {
+        document.getElementById("countrySelect").selectedIndex = 0;
+        document.getElementById("citySelect").selectedIndex = 0;
+        }
+
+        function makeSubmenu2(value) {
+        if(value.length==0) document.getElementById("citySelect2").innerHTML = "<option></option>";
+        else {
+        var citiesOptions = "";
+        for(cityId in citiesByState[value]) {
+        citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+        }
+        document.getElementById("citySelect2").innerHTML = citiesOptions;
+        }
+        }
+        function displaySelected() { var country = document.getElementById("countrySelect2").value;
+        var city = document.getElementById("citySelect2").value;
+        alert(country+"\n"+city);
+        }
+        function resetSelection() {
+        document.getElementById("countrySelect2").selectedIndex = 0;
+        document.getElementById("citySelect2").selectedIndex = 0;
+        }
+
+
+        $(function() {
+            $( "#datepicker-1" ).datepicker();
         });
-    </script>
+ 
 
+        function FillPermanent(f) {
+          if(f.permanenttoo.checked == true) {
+            f.permanentaddress1.value = f.currentaddress1.value;
+            f.permanentaddress2.value = f.currentaddress2.value;
+            f.permanentcity.value = f.currentcity.value;
+            f.permanentstate.value = f.currentstate.value;
+            f.permanentcode.value = f.currentcode.value;
+
+          }
+        }
+    </script>
 </body>
 
 </html>
