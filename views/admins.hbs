@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bellfox-Parents</title>
+    <title>Bellfox-Admin</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -19,7 +19,7 @@
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
     <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <!-- <link type="text/css" href="assets/css/main.css" rel="stylesheet"> -->
 
     <!-- Material Design Icons -->
@@ -334,12 +334,12 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">All Parents</li>
+                                        <li class="breadcrumb-item active" aria-current="page">All Admin</li>
                                     </ol>
                                 </nav>
-                                <h1 class="m-0">Parents</h1>
+                                <h1 class="m-0">Admins</h1>
                             </div>
-                            <a href="/addParent" class="btn btn-success ml-3">Add Parent</a>
+                            <a href="/adminform.html" class="btn btn-success ml-3">Add Admin</a>
                         </div>
                     </div>
 
@@ -348,7 +348,7 @@
                             <div class="card-header">
                                 <div class="heading-layout">
                                     <div class="title">
-                                        <h3>All Parents Data</h3>
+                                        <h3>All Admin's Data</h3>
                                     </div>
                                 </div>
                                 <form class="mg-b-20">
@@ -383,14 +383,13 @@
                                                 </div>
                                             </th>
 
-                                            <th>Id</th>
                                             <th>Photo</th>
                                             <th>Name</th>
-                                            <th>Gender</th>
-                                            <th>Occupation</th>
-                                            <th>Address</th>
-                                            <th>Phone</th>
                                             <th>Email</th>
+                                            <th>Last Active</th>
+                                            <th>Arrival Time</th>
+                                            <th>Departure time</th>
+                                            <th>Access Control</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -406,44 +405,39 @@
                                             </td>
 
                                             <td>
-                                                <div class="media-body d-flex ">
-                                                    <span class="js-lists-values-employee-roll">#001</span>
-                                                </div>
-                                            </td>
-                                            <td>
                                                 <div class="avatar avatar-xs mr-2">
                                                     <a href="/details.html"><img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
                                                 </div> 
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Michael Smith</span>
+                                                    <span class="js-lists-values-employee-name">Manoj Sharma</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-gender">Male</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-occupation">Business</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-address">TA-107 Newyork</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-phone">+ 123 9988568</span>
+                                                    <span class="js-lists-values-employee-email">manojsharma@gmail.com</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">kazifahim93@gmail.com</span>
+                                                    <span class="js-lists-values-employee-last-active">11:30 AM</span>
                                                 </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-access-control">Admin</span>
+                                                </div>                                            
                                             </td>
 
                                             <td style="display: none;">
@@ -484,43 +478,38 @@
                                             </td>
 
                                             <td>
-                                                <div class="media-body d-flex ">
-                                                    <span class="js-lists-values-employee-roll">#002</span>
-                                                </div>
-                                            </td>
-                                            <td>
                                                 <div class="avatar avatar-xs mr-2">
                                                     <a href="/details.html"><img src="assets/images/avatar/green.svg" alt="Avatar" class="avatar-img rounded-circle"></a>
                                                 </div> 
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Connie Smith</span>
+                                                    <span class="js-lists-values-employee-name">Deepak Gupta</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-gender">Male</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-occupation">Business</span>
+                                                    <span class="js-lists-values-employee-email">deepakgupta@gmail.com</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-address">TA-107 Newyork</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-phone">+ 123 9988568</span>
+                                                    <span class="js-lists-values-employee-last-active">10:47 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">kazifahim93@gmail.com</span>
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-access-control">Manager</span>
                                                 </div>
                                             </td>
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
@@ -534,12 +523,6 @@
                                                 </div>
                                             </td>
 
-
-                                            <td>
-                                                <div class="media-body d-flex ">
-                                                    <span class="js-lists-values-employee-roll">#003</span>
-                                                </div>
-                                            </td>
                                             <td>
                                                 <div class="avatar avatar-xs mr-2">
                                                     <a href="/details.html"><img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
@@ -547,32 +530,32 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">John Connor</span>
+                                                    <span class="js-lists-values-employee-name">Neeraj Gupta</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-gender">Male</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-occupation">Business</span>
+                                                    <span class="js-lists-values-employee-email">neerajgupta@gmail.com</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-address">TA-107 Newyork</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-phone">+ 123 9988568</span>
+                                                    <span class="js-lists-values-employee-last-active">12:30 PM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">kazifahim93@gmail.com</span>
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-access-control">Manager</span>
                                                 </div>
                                             </td>
 
@@ -588,12 +571,6 @@
                                                 </div>
                                             </td>
 
-
-                                            <td>
-                                                <div class="media-body d-flex ">
-                                                    <span class="js-lists-values-employee-roll">#004</span>
-                                                </div>
-                                            </td>
                                             <td>
                                                 <div class="avatar avatar-xs mr-2">
                                                     <a href="/details.html"><img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
@@ -601,32 +578,32 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Michael Smith</span>
+                                                    <span class="js-lists-values-employee-name">Parth Singh</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-gender">Male</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-occupation">Business</span>
+                                                    <span class="js-lists-values-employee-last-email">parthsingh@gmail.com</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-address">TA-107 Newyork</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-phone">+ 123 9988568</span>
+                                                    <span class="js-lists-values-employee-last-active">7:22 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">kazifahim93@gmail.com</span>
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-access-control">Admin</span>
                                                 </div>
                                             </td>
 
@@ -642,12 +619,6 @@
                                             </td>
 
 
-
-                                            <td>
-                                                <div class="media-body d-flex ">
-                                                    <span class="js-lists-values-employee-roll">#005</span>
-                                                </div>
-                                            </td>
                                             <td>
                                                 <div class="avatar avatar-xs mr-2">
                                                     <a href="/details.html"><img src="assets/images/avatar/green.svg" alt="Avatar" class="avatar-img rounded-circle"></a>
@@ -655,34 +626,35 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">Connie Smith</span>
+                                                    <span class="js-lists-values-employee-name">Vinay Bansal</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-gender">Male</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-email">vinaybansal@gmail.com</span>
+                                                </div>
                                             </td>
                                             <td>
+                                                    <div class="media-body d-flex justify-content-center">
+                                                        <span class="js-lists-values-employee-last-active">10:20 AM</span>
+                                                    </div>
+                                                </td>
+                                            <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-occupation">Business</span>
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-address">TA-107 Newyork</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-phone">+ 123 9988568</span>
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">kazifahim93@gmail.com</span>
+                                                    <span class="js-lists-values-employee-access-control">Manager</span>
                                                 </div>
                                             </td>
+
 
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
                                         </tr>
@@ -695,12 +667,6 @@
                                                 </div>
                                             </td>
 
-
-                                            <td>
-                                                <div class="media-body d-flex ">
-                                                    <span class="js-lists-values-employee-roll">#006</span>
-                                                </div>
-                                            </td>
                                             <td>
                                                 <div class="avatar avatar-xs mr-2">
                                                     <a href="/detail.html"><img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
@@ -708,32 +674,32 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-name">John Connor</span>
+                                                    <span class="js-lists-values-employee-name">Rohan Sharma</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-gender">Male</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-email">rohansharma@gmail.com</span>
+                                               </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-occupation">Business</span>
+                                                    <span class="js-lists-values-employee-last-active">11:40 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-address">TA-107 Newyork</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-phone">+ 123 9988568</span>
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-email">kazifahim93@gmail.com</span>
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-access-control">Admin</span>
                                                 </div>
                                             </td>
 
@@ -808,14 +774,14 @@
                                     </a>
                                 </li>
 
-                                <li class="sidebar-menu-item ">
+                                <li class="sidebar-menu-item active open">
                                         <a class="sidebar-menu-button" data-toggle="collapse" href="#staff_menu">
                                             <i class="sidebar-menu-icon fas fa-users"></i>
                                             <span class="sidebar-menu-text">Staff</span>
                                             <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                         </a>
-                                        <ul class="sidebar-submenu collapse" id="staff_menu">
-                                            <li class="sidebar-menu-item ">
+                                        <ul class="sidebar-submenu collapse show" id="staff_menu">
+                                            <li class="sidebar-menu-item active">
                                                         <a class="sidebar-menu-button" href="/admins">
                                                             <span class="sidebar-menu-text">Admin</span>
                                                         </a>
