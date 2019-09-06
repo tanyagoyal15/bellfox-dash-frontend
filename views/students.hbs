@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- Simplebar -->
+    <link type="text/css" href="assets/vendor/simplebar.min.css" rel="stylesheet">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link type="text/css" href="assets/css/main.css" rel="stylesheet"> -->
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
+
+    <!-- Font Awesome FREE Icons -->
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133433427-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133433427-1');
+    </script>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '327167911228268');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=327167911228268&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+
+    <!-- Flatpickr -->
+    <link type="text/css" href="assets/css/vendor-flatpickr.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-flatpickr.rtl.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-flatpickr-airbnb.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-flatpickr-airbnb.rtl.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body class="layout-default">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="preloader"></div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+        <!-- Header -->
+
+        <div id="header" class="mdk-header js-mdk-header m-0" data-fixed>
+            <div class="mdk-header__content">
+
+                <div class="navbar navbar-expand-sm navbar-main navbar-dark bg-dark  pr-0" id="navbar" data-primary>
+                    <div class="container-fluid p-0">
+
+                        <!-- Navbar toggler -->
+
+                        <button class="navbar-toggler navbar-toggler-right d-block d-md-none" type="button" data-toggle="sidebar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                        <!-- Navbar Brand -->
+                        <a href="index.html" class="navbar-brand ">
+                            <img class="navbar-brand-icon" src="assets/images/stack-logo-white.svg" width="22" alt="Stack">
+                            <span>Bellfox</span>
+                        </a>
+
+
+
+
+                        <form class="search-form d-none d-sm-flex flex" action="index.html">
+                            <button class="btn" type="submit" role="button"><i class="material-icons">search</i></button>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </form>
+
+
+                        <ul class="nav navbar-nav ml-auto d-none d-md-flex" style="display: none !important;">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="material-icons">help_outline</i> Get Help
+                                </a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a href="pricing.html" class="btn btn-outline-warning">
+                                    <i class="material-icons">star</i> PRO
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#notifications_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                                    <i class="material-icons nav-icon navbar-notifications-indicator">notifications</i>
+                                </a>
+                                <div id="notifications_menu" class="dropdown-menu dropdown-menu-right navbar-notifications-menu">
+                                    <div class="dropdown-item d-flex align-items-center py-2">
+                                        <span class="flex navbar-notifications-menu__title m-0">Notifications</span>
+                                        <a href="javascript:void(0)" class="text-muted"><small>Clear all</small></a>
+                                    </div>
+                                    <div class="navbar-notifications-menu__content" data-simplebar>
+                                        <div class="py-2">
+
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <div class="avatar avatar-sm" style="width: 32px; height: 32px;">
+                                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="">A.Demian</a> left a comment on <a href="">Stack</a><br>
+                                                    <small class="text-muted">1 minute ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    New user <a href="#">Peter Parker</a> signed up.<br>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title rounded-circle">JD</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                    <div>Hey, how are you? What about our next meeting</div>
+                                                    <small class="text-muted">2 minutes ago</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <div class="avatar avatar-sm" style="width: 32px; height: 32px;">
+                                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="">A.Demian</a> left a comment on <a href="">Stack</a><br>
+                                                    <small class="text-muted">1 minute ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    New user <a href="#">Peter Parker</a> signed up.<br>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title rounded-circle">JD</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                    <div>Hey, how are you? What about our next meeting</div>
+                                                    <small class="text-muted">2 minutes ago</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <div class="avatar avatar-sm" style="width: 32px; height: 32px;">
+                                                        <img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="">A.Demian</a> left a comment on <a href="">Stack</a><br>
+                                                    <small class="text-muted">1 minute ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title bg-purple rounded-circle"><i class="material-icons icon-16pt">person_add</i></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    New user <a href="#">Peter Parker</a> signed up.<br>
+                                                    <small class="text-muted">1 hour ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item d-flex">
+                                                <div class="mr-3">
+                                                    <a href="#">
+                                                        <div class="avatar avatar-xs" style="width: 32px; height: 32px;">
+                                                            <span class="avatar-title rounded-circle">JD</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex">
+                                                    <a href="#">Big Joe</a> <small class="text-muted">wrote:</small><br>
+                                                    <div>Hey, how are you? What about our next meeting</div>
+                                                    <small class="text-muted">2 minutes ago</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0);" class="dropdown-item text-center navbar-notifications-menu__footer">View All</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav d-none d-sm-flex border-left navbar-height align-items-center">
+                            <li class="nav-item dropdown">
+                                <a href="#account_menu" class="nav-link dropdown-toggle" data-toggle="dropdown" data-caret="false">
+                                    <img src="assets/images/avatar/demi.png" class="rounded-circle" width="32" alt="Frontted">
+                                    <span class="ml-1 d-flex-inline">
+                                        <span class="text-light">Adrian D.</span>
+                                    </span>
+                                </a>
+                                <div id="account_menu" class="dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-item-text dropdown-item-text--lh">
+                                        <div><strong>Adrian Demian</strong></div>
+                                        <div>@adriandemian</div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                                    <a class="dropdown-item" href="profile.html">My profile</a>
+                                    <a class="dropdown-item" href="edit-account.html">Edit account</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- // END Header -->
+
+        <!-- Header Layout Content -->
+        <div class="mdk-header-layout__content">
+
+            <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+                <div class="mdk-drawer-layout__content page">
+
+
+                    <div class="bg-white border-bottom" style="display: none;">
+                        <div class="container-fluid page__container">
+                            <div class="card-header-tabs-basic nav" role="tablist">
+                                <a href="#" class="active">All</a>
+                                <a href="#">Pro</a>
+                                <a href="#">Active</a>
+                                <a href="#">Temporary</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid page__heading-container">
+                        <div class="page__heading d-flex align-items-center">
+                            <div class="flex">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">All Students</li>
+                                    </ol>
+                                </nav>
+                                <h1 class="m-0">Students</h1>
+                            </div>
+                            <a href="/addStudent" class="btn btn-success ml-3">Add Student</a>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid page__container">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="heading-layout">
+                                    <div class="title">
+                                        <h3>All Students Data</h3>
+                                    </div>
+                                </div>
+                                <form class="mg-b-20">
+                                    <div class="row search-form">
+                                        <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                            <input type="text" placeholder="Search by Roll..." class="form-control">
+                                        </div>
+                                        <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                            <input type="text" placeholder="Search by Name..." class="form-control">
+                                        </div>
+                                        <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                            <input type="text" placeholder="Search by Class..." class="form-control">
+                                        </div>
+                                        <div class="col-1-xxxl col-xl-3 col-lg-3 col-12 form-group">
+                                            <button type="submit" class="search-btn">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                            <div class="table-responsive border-bottom" data-toggle="lists" data-lists-values='["js-lists-values-employee-name"]'>
+
+                                <table class="table mb-0 thead-border-top-0">
+                                    <thead>
+                                        <tr>
+
+                                            <th style="width: 18px;">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-toggle-check-all" data-target="#staff" id="customCheckAll">
+                                                    <label class="custom-control-label" for="customCheckAll"><span class="text-hide">Toggle all</span></label>
+                                                </div>
+                                            </th>
+
+                                            <th>Roll</th>
+                                            <th>Photo</th>
+                                            <th>Name</th>
+                                            <th>Class</th>
+                                            <th>Section</th>
+                                            <th>Arrival Time</th>
+                                            <th>Departure time</th>
+                                            <th>Phone</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="list" id="students">
+
+                                        <tr class="selected">
+
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" checked="" id="customCheck1_1">
+                                                    <label class="custom-control-label" for="customCheck1_1"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="media-body d-flex ">
+                                                    <span class="js-lists-values-employee-roll">#001</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-xs mr-2">
+                                                    <a href="/details.html"><img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
+                                                </div> 
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-name">Rahul Gupta</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-class">2nd</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-section">A</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-phone">+ 923 9988568</span>
+                                                </div>
+                                            </td>
+
+                                            <td style="display: none;">
+
+                                                <div class="media align-items-center">
+                                                    <div class="avatar avatar-xs mr-2">
+                                                        <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+                                                    <div class="media-body">
+
+                                                        <span class="js-lists-values-employee-name">Michael Smith</span>
+
+                                                    </div>
+                                                </div>
+
+                                            </td>
+
+                                            <td style="display: none;">
+                                                <div class="media align-items-center">
+                                                    <a href="">Black Ops</a>
+                                                    <a href="#" class="rating-link"><i class="material-icons ml-2">star</i></a>
+                                                </div>
+                                            </td>
+
+                                            <td style="display: none;">12</td>
+                                            <td style="display: none;"><span class="badge badge-warning">ADMIN</span></td>
+                                            <td style="display: none;"><small class="text-muted">3 days ago</small></td>
+                                            <td style="display: none;">&dollar;12,402</td>
+                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck2_1">
+                                                    <label class="custom-control-label" for="customCheck2_1"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="media-body d-flex ">
+                                                    <span class="js-lists-values-employee-roll">#002</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-xs mr-2">
+                                                    <a href="/details.html"><img src="assets/images/avatar/green.svg" alt="Avatar" class="avatar-img rounded-circle"></a>
+                                                </div> 
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-name">Akash Sharma</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-class">2nd</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-section">A</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:25 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-phone">+ 953 9988534</span>
+                                                </div>
+                                            </td>
+                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck3_1">
+                                                    <label class="custom-control-label" for="customCheck3_1"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+
+                                            <td>
+                                                <div class="media-body d-flex ">
+                                                    <span class="js-lists-values-employee-roll">#003</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-xs mr-2">
+                                                    <a href="/details.html"><img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
+                                                </div> 
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-name">Niharika Singh</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-class">2nd</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-section">A</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:45 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-phone">+ 9224981125</span>
+                                                </div>
+                                            </td>
+
+                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                                        </tr>
+
+                                        <tr class="selected">
+
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" checked="" id="customCheck1_2">
+                                                    <label class="custom-control-label" for="customCheck1_2"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+
+                                            <td>
+                                                <div class="media-body d-flex ">
+                                                    <span class="js-lists-values-employee-roll">#004</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-xs mr-2">
+                                                    <a href="/details.html"><img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
+                                                </div> 
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-name">Karan Goyal</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-class">2nd</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-section">A</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:30 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-phone">+ 9913529849</span>
+                                                </div>
+                                            </td>
+
+                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck2_2">
+                                                    <label class="custom-control-label" for="customCheck2_2"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+
+
+                                            <td>
+                                                <div class="media-body d-flex ">
+                                                    <span class="js-lists-values-employee-roll">#005</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-xs mr-2">
+                                                    <a href="/details.html"><img src="assets/images/avatar/green.svg" alt="Avatar" class="avatar-img rounded-circle"></a>
+                                                </div> 
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-name">Ananya Goyal</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-class">2nd</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-section">A</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:42 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-phone">+ 947 9988529</span>
+                                                </div>
+                                            </td>
+
+                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input js-check-selected-row" id="customCheck3_2">
+                                                    <label class="custom-control-label" for="customCheck3_2"><span class="text-hide">Check</span></label>
+                                                </div>
+                                            </td>
+
+
+                                            <td>
+                                                <div class="media-body d-flex ">
+                                                    <span class="js-lists-values-employee-roll">#006</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="avatar avatar-xs mr-2">
+                                                    <a href="/detail.html"><img src="assets/images/256_daniel-gaffey-1060698-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle"></a>
+                                                </div> 
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-name">Suhani Jain</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-class">2nd</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-section">A</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:20 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-departure">2:45 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-phone">+ 9984722940</span>
+                                                </div>
+                                            </td>
+
+                                            <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="card-body text-right">
+                                15 <span class="text-muted">of 1,430</span> <a href="#" class="text-muted-light"><i class="material-icons ml-1">arrow_forward</i></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- // END drawer-layout__content -->
+                <div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start">
+                    <div class="mdk-drawer__content">
+                        <div class="sidebar sidebar-light sidebar-left simplebar" data-simplebar>
+                            <div class="d-flex align-items-center sidebar-p-a border-bottom sidebar-account">
+                                <a href="profile.html" class="flex d-flex align-items-center text-underline-0 text-body">
+                                    <span class="avatar mr-3">
+                                        <img src="assets/images/avatar/demi.png" alt="avatar" class="avatar-img rounded-circle">
+                                    </span>
+                                    <span class="flex d-flex flex-column">
+                                        <strong>Adrian Demian</strong>
+                                        <small class="text-muted text-uppercase">Account Manager</small>
+                                    </span>
+                                </a>
+                                <div class="dropdown ml-auto">
+                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i class="material-icons">more_vert</i></a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <div class="dropdown-item-text dropdown-item-text--lh">
+                                            <div><strong>Adrian Demian</strong></div>
+                                            <div>@adriandemian</div>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="index.html">Dashboard</a>
+                                        <a class="dropdown-item" href="profile.html">My profile</a>
+                                        <a class="dropdown-item" href="edit-account.html">Edit account</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="login.html">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-heading sidebar-m-t">Menu</div>
+                            <ul class="sidebar-menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#dashboards_menu">
+                                            <i class="sidebar-menu-icon fa fa-chart-line"></i>
+                                            <span class="sidebar-menu-text">Dashboards</span>
+                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                    </a>
+                                    <ul class="sidebar-submenu collapse" id="dashboards_menu">
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="/dashboard">
+                                                <span class="sidebar-menu-text">Default</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="/dashboard">
+                                                <span class="sidebar-menu-text">CRM/Staff</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" href="/dashboard">
+                                                <span class="sidebar-menu-text">E-commerce</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-menu-item active">
+                                    <a class="sidebar-menu-button" href="/students">
+                                        <span class="sidebar-menu-text">Students</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu-item ">
+                                    <a class="sidebar-menu-button" href="/parents">
+                                        <span class="sidebar-menu-text">Parents</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu-item active open">
+                                        <a class="sidebar-menu-button" data-toggle="collapse" href="#staff_menu">
+                                            <i class="sidebar-menu-icon fas fa-users"></i>
+                                            <span class="sidebar-menu-text">Staff</span>
+                                            <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                        </a>
+                                        <ul class="sidebar-submenu collapse" id="staff_menu">
+                                            <li class="sidebar-menu-item ">
+                                                        <a class="sidebar-menu-button" href="/admins">
+                                                            <span class="sidebar-menu-text">Admin</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="sidebar-menu-item">
+                                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#management_menu">
+                                                                <span class="sidebar-menu-text">Management</span>
+                                                                <span class="ml-auto d-flex align-items-center">
+                                                                    <span class="sidebar-menu-toggle-icon"></span>
+                                                                </span>
+                                                            </a>
+                                                            <ul class="sidebar-submenu collapse" id="management_menu">
+                                                                <li class="sidebar-menu-item">
+                                                                    <a class="sidebar-menu-button" href="/ctaform">
+                                                                        <span class="sidebar-menu-text">CTA</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="sidebar-menu-item ">
+                                                                    <a class="sidebar-menu-button" href="/principals">
+                                                                        <span class="sidebar-menu-text">Principal</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="sidebar-menu-item ">
+                                                                    <a class="sidebar-menu-button" href="/viceprincipal">
+                                                                        <span class="sidebar-menu-text">Vice Principal</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="sidebar-menu-item">
+                                                                    <a class="sidebar-menu-button" href="/hods">
+                                                                        <span class="sidebar-menu-text">HOD</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="sidebar-menu-item ">
+                                                            <a class="sidebar-menu-button" href="/teachers">
+                                                                <span class="sidebar-menu-text">Teachers</span>
+                                                            </a>
+                                                    </li>
+                                                    <li class="sidebar-menu-item active open">
+                                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_menu">
+                                                                <span class="sidebar-menu-text">Workers</span>
+                                                                <span class="ml-auto d-flex align-items-center">
+                                                                    <span class="sidebar-menu-toggle-icon"></span>
+                                                                </span>
+                                                            </a>
+                                                            <ul class="sidebar-submenu collapse show" id="workers_menu">
+                                                                <li class="sidebar-menu-item active">
+                                                                    <a class="sidebar-menu-button" href="/drivers">
+                                                                        <span class="sidebar-menu-text">Drivers</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="sidebar-menu-item ">
+                                                                    <a class="sidebar-menu-button" href="/serviceworker">
+                                                                        <span class="sidebar-menu-text">Service Workers</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="sidebar-menu-item">
+                                                                    <a class="sidebar-menu-button" href="/cleaners">
+                                                                        <span class="sidebar-menu-text">Cleaners</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="sidebar-menu-item">
+                                                                    <a class="sidebar-menu-button" href="/assistant">
+                                                                        <span class="sidebar-menu-text">Assistant</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                    </li>
+                                        </ul>
+                                    </li>
+
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="/settings">
+                                        <i class="sidebar-menu-icon fas fa-cog"></i>
+                                        <span class="sidebar-menu-text">Settings</span>
+                                    </a>
+                                </li>
+    
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="/reports">
+                                        <i class="sidebar-menu-icon fas fa-file-alt"></i>
+                                        <span class="sidebar-menu-text">Reports</span>
+                                    </a>
+                                </li>
+
+                                
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="/logout">
+                                        <i class="sidebar-menu-icon fas fa-file-alt"></i>
+                                        <span class="sidebar-menu-text">Logout</span>
+                                    </a>
+                                </li>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // END drawer-layout -->
+
+        </div>
+        <!-- // END header-layout__content -->
+
+    </div>
+    <!-- // END header-layout -->
+
+    <!-- App Settings FAB -->
+    <div id="app-settings">
+        <app layout-active="default" :layout-location="{
+      'default': 'staff.html',
+      'fixed': 'fixed-staff.html',
+      'fluid': 'fluid-staff.html',
+      'mini': 'mini-staff.html'
+    }"></app>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Simplebar -->
+    <script src="assets/vendor/simplebar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- App -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/sidebar-mini.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/js/app-settings.js"></script>
+
+
+
+    <!-- Flatpickr -->
+    <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+
+    <!-- Global Settings -->
+    <script src="assets/js/settings.js"></script>
+
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+
+    <!-- UI Charts Page JS -->
+    <script src="assets/js/chartjs-rounded-bar.js"></script>
+    <script src="assets/js/charts.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="assets/js/page.staff.js"></script>
+
+    <script>
+        
+        $('.list tr').click(function(){
+            window.location = "details.html";
+        });
+
+    </script>
+
+</body>
+
+</html>

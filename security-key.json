@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bellfox-dash-frontend",
+  "private_key_id": "4cc60ee33c95c4bca72fb2fc9f0801bb111b5b5e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC9zLgmiBwj9J2T\nHK8Fo2thwMos5lL9Qf8Ls8tED24998q2nc83oGm5FrVb5Px5sFUc4qdIodSnFEql\nfqmX9uHIvBN2OpEuLGHGDGhf5MsStVACiW65gSQMTMrDKO+uQKjqyIsvTZN7y7eY\nsUmKtLoAzZY+9PDlxqkMoLAga080GN26bBvwiU6mA6o79WOi9+lE4pYPMDAvJ7cf\n9/vkBDNqpoql2Q8JISHivkqUoiFX2ioQLWRRpNqd3jxLyievblk6dN93s1F9nc4i\ntXDCE+6vVnaMDlzCCNQoQLhy1QsyKu7kcD8x47du1PdUiaXWOtEJSBTKW/Mfm1zY\nQEIb7hu3AgMBAAECggEAO8+iLn5RA+GnsH7nBstXYRA8hga1G1srUNhBU3rbXkrS\nhlbXwKtb9bhawZE5IO34/GfOmJxq45YI6fsu3ZUu1K+0IFtXeeoBi8RINgPnHMen\nZY1Cp9Gy9u9SLEsfsNVuhcJZ3je/pNDvU/52cu/995fR45gTvA0tI64Vorm+VWd/\nidzm3rPBPrN78+0yxwQ590q+fuepwj3ERUJFqWOHuoQ05mpplrsqQOfkPvp3yENy\nvHs2+8ImksmcwN6hMKz0LrJfqh/M6KP+ID7/i183OwMuFMs2CMCWAQeaTl33U5PG\npECNvedw7i9/JkcqYqLDOe0SI46PFoTwQvqEptzfqQKBgQDnwhm6o+iMq0zL/912\naIwO4JDaC72qei0EdF0rPgf4WGEDwbtwQXsM7IxcvtjNtlDtvYoal04irtKX5ohx\nmrfiYB0kOVQJL9bH/8X1jqTRXlhHKLet7ABdkzMPthyFpFgDPu5fsk0/9YndnND6\nG0OkisvScXFWo9pDv+qXg+H5DwKBgQDRpxNbpUkwkTM/8bF35rhSXMYhthWgr+i/\nvCb/bv1mkrjDeq5dEBd27ezlZsmVcUohMifiVJNRAfo50YVwpj9k2kYZtExRF9B/\nQc4fAQyGX1Xx20yujSoApJcESQRWQhEkxwdeEgCTNRZnEz2GV2u+YbYm6Hk7sQL6\nJO//ANIi2QKBgBhgLO6ZgMMS3U/ziGqE0n5aFkIoy/kbQpLeXlJHAvWW7hVEEh/b\nc0LHuneixxDT5S0sK1NiqKAzPQknASDZwg94Rnhh4znYI0ID3+FU8Hbo8mYBnVgY\no200J0G2yMcxouQsgUvlaASbIbYCYWR8659pzchDkEUplLJdhCINh/33AoGAEpbg\n5YhjU/Yb+DiDBuGjSFJHkyelBUlztsSFJLL/rv+leFfBbCkIG5h/H9wcVa7k5sqe\ntLfRFCa7vDKyxUlIZ7Xe71qIRcx5xT7deuxJ4wRDB53tT7Den434gf3Db66N/JfV\nNGceO+9CHEOdefL4b7oUP6DvVvacD/gEe7Tj7QkCgYBbUA5ZC7teAQ/2yjWV1nzR\nGXODy4bfEFwsbZsogIJUu49j1RVzJBCGaW+AkMA4L06eIqAjKDq+98sTZr5H6ZCE\nmxBS9v4ZiYPkR1FTWEslGPLPsgE0bldh8VRNJ6V4mWUkf71Sa8cXMJm9hXmHxwcH\nTBaokxGgCokWqtgxXj1eDw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-1mso0@bellfox-dash-frontend.iam.gserviceaccount.com",
+  "client_id": "101674916154649713847",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-1mso0%40bellfox-dash-frontend.iam.gserviceaccount.com"
+}
