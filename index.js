@@ -138,6 +138,51 @@ app.get('/parents' , (request, response) => {
     }
 })
 
+app.get('/admins' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('admins');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/ctaform' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('ctaform');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/principal' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('principal');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/viceprincipal' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('viceprincipal');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/hods' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('hods');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
 app.get('/addStudent' , (request, response) => {
     if(firebase.auth().currentUser) {
         response.render('addStudent');
