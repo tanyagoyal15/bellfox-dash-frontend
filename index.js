@@ -140,7 +140,7 @@ app.get('/parents' , (request, response) => {
 
 app.get('/addStudent' , (request, response) => {
     if(firebase.auth().currentUser) {
-        response.redirect('addStudent');
+        response.render('addStudent');
     } else {
         // alert('Please Login to Access Dashboard');
         response.redirect('/login');
@@ -149,7 +149,7 @@ app.get('/addStudent' , (request, response) => {
 
 app.get('/addParent' , (request, response) => {
     if(firebase.auth().currentUser) {
-        response.redirect('addParent');
+        response.render('addParent');
     } else {
         // alert('Please Login to Access Dashboard');
         response.redirect('/login');
