@@ -201,7 +201,7 @@ app.get('/drivers' , (request, response) => {
     }
 })
 
-app.get('/serviceworkers' , (request, response) => {
+app.get('/serviceworker' , (request, response) => {
     if(firebase.auth().currentUser) {
         response.render('serviceworker');
     } else {
@@ -256,6 +256,42 @@ app.get('/addHOD' , (request, response) => {
     }
 })
 
+app.get('/addDriver' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('addDriver');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/addServiceWorker' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('addServiceWorker');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/addCleaner' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('addCleaner');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/addAssistant' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('addAssistant');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
 app.get('/addTeacher' , (request, response) => {
     if(firebase.auth().currentUser) {
         response.render('addTeacher');
@@ -264,6 +300,7 @@ app.get('/addTeacher' , (request, response) => {
         response.redirect('/login');
     }
 })
+
 app.get('/logout' , (req, res, next) => {
     firebase.auth().signOut().then(function() {
         //Log out user
