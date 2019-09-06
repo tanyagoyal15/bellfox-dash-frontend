@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bellfox-Teachers</title>
+    <title>BellFox-Assistant</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -334,52 +334,37 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb mb-0">
                                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">All Teachers</li>
+                                        <li class="breadcrumb-item active" aria-current="page">All Assistant</li>
                                     </ol>
                                 </nav>
-                                <h1 class="m-0">Teachers</h1>
+                                <h1 class="m-0">Assistant</h1>
                             </div>
-                            <a href="/addTeacher" class="btn btn-success ml-3">Add Teacher</a>
+                            <a href="/addAssistant" class="btn btn-success ml-3">Add Assistant</a>
                         </div>
                     </div>
 
                     <div class="container-fluid page__container">
-
                         <div class="card">
                             <div class="card-header">
                                 <div class="heading-layout">
                                     <div class="title">
-                                        <h3>All Teachers Data</h3>
+                                        <h3>All Assistant Data</h3>
                                     </div>
                                 </div>
                                 <form class="mg-b-20">
                                     <div class="row search-form">
                                         <div class="col-3-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                                            <input type="text" placeholder="Search by Id..." class="form-control">
+                                            <input type="text" placeholder="Search by Roll..." class="form-control">
                                         </div>
                                         <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
                                             <input type="text" placeholder="Search by Name..." class="form-control">
                                         </div>
                                         <div class="col-4-xxxl col-xl-3 col-lg-3 col-12 form-group">
-                                            <input type="text" placeholder="Search by Phone..." class="form-control">
+                                            <input type="text" placeholder="Search by Class..." class="form-control">
                                         </div>
                                         <div class="col-1-xxxl col-xl-3 col-lg-3 col-12 form-group">
                                             <button type="submit" class="search-btn">Search</button>
                                         </div>
-                                    </div>
-                                </form>
-                                <form class="form-inline" style="display: none;">
-                                    <label class="mr-sm-2" for="inlineFormFilterBy">Filter by:</label>
-                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormFilterBy" placeholder="Type a name">
-
-                                    <label class="sr-only" for="inlineFormRole">Role</label>
-                                    <select id="inlineFormRole" class="custom-select mb-2 mr-sm-2 mb-sm-0">
-                                        <option value="All Roles">All Roles</option>
-                                    </select>
-
-                                    <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                        <input type="checkbox" class="custom-control-input" id="inlineFormPurchase">
-                                        <label class="custom-control-label" for="inlineFormPurchase">Made a Purchase?</label>
                                     </div>
                                 </form>
                             </div>
@@ -403,8 +388,8 @@
                                             <th>Email</th>
                                             <th>Last Active</th>
                                             <th>Arrival Time</th>
-                                            <th>Departure Time</th>
-                                            <th>Subject</th>
+                                            <th>Departure time</th>
+                                            <th>Designation</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -432,16 +417,16 @@
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
                                                     <span class="js-lists-values-employee-email">rahulgupta@gmail.com</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">11:20 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:25 AM</span>
+                                                    <span class="js-lists-values-employee-last-active">11:17 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:22 AM</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -451,8 +436,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-subject">English</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-designation"></span>
+                                                </div>
                                             </td>
 
                                             <td style="display: none;">
@@ -505,16 +490,16 @@
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
                                                     <span class="js-lists-values-employee-email">akashsharma@gmail.com</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">12:40 PM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:38 AM</span>
+                                                    <span class="js-lists-values-employee-last-active">1:19 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:25 AM</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -524,8 +509,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-subject">Chemistry</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-designation"></span>
+                                                </div>
                                             </td>
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
                                         </tr>
@@ -551,16 +536,16 @@
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
                                                     <span class="js-lists-values-employee-email">niharikasingh@gmail.com</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">1:20 PM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:40 AM</span>
+                                                    <span class="js-lists-values-employee-last-active">9:30 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:45 AM</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -570,8 +555,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-subject">Hindi</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-designation"></span>
+                                                </div>
                                             </td>
 
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
@@ -599,16 +584,16 @@
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
                                                     <span class="js-lists-values-employee-email">karangoyal@gmail.com</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">11:15 AM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:15 AM</span>
+                                                    <span class="js-lists-values-employee-last-active">11:20 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:30 AM</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -618,8 +603,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-subject">Mathematics</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-designation"></span>
+                                                </div>
                                             </td>
 
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
@@ -632,7 +617,6 @@
                                                     <label class="custom-control-label" for="customCheck2_2"><span class="text-hide">Check</span></label>
                                                 </div>
                                             </td>
-
 
                                             <td>
                                                 <div class="avatar avatar-xs mr-2">
@@ -647,16 +631,16 @@
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
                                                     <span class="js-lists-values-employee-email">ananyagoyal@gmail.com</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">1:10 PM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:27 AM</span>
+                                                    <span class="js-lists-values-employee-last-active">10:59 AM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:42 AM</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -666,8 +650,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-subject">Biology</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-designation"></span>
+                                                </div>
                                             </td>
 
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
@@ -694,16 +678,16 @@
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
                                                     <span class="js-lists-values-employee-email">suhanijain@gmail.com</span>
-                                                </div>                                            
-                                            </td>
-                                            <td>
-                                                <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-last-active">12:45 PM</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-arrival">7:39 AM</span>
+                                                    <span class="js-lists-values-employee-last-active">12:19 PM</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="media-body d-flex justify-content-center">
+                                                    <span class="js-lists-values-employee-arrival">7:20 AM</span>
                                                 </div>
                                             </td>
                                             <td>
@@ -713,8 +697,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-body d-flex justify-content-center">
-                                                    <span class="js-lists-values-employee-subject">Physics</span>
-                                                </div>                                            
+                                                    <span class="js-lists-values-employee-designation"></span>
+                                                </div>
                                             </td>
 
                                             <td><a href="" class="text-muted"><i class="material-icons">more_vert</i></a></td>
@@ -830,19 +814,19 @@
                                                                 </li>
                                                             </ul>
                                                     </li>
-                                                    <li class="sidebar-menu-item active">
+                                                    <li class="sidebar-menu-item ">
                                                             <a class="sidebar-menu-button" href="/teachers">
                                                                 <span class="sidebar-menu-text">Teachers</span>
                                                             </a>
                                                     </li>
-                                                    <li class="sidebar-menu-item ">
+                                                    <li class="sidebar-menu-item active open">
                                                             <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_menu">
                                                                 <span class="sidebar-menu-text">Workers</span>
                                                                 <span class="ml-auto d-flex align-items-center">
                                                                     <span class="sidebar-menu-toggle-icon"></span>
                                                                 </span>
                                                             </a>
-                                                            <ul class="sidebar-submenu collapse" id="workers_menu">
+                                                            <ul class="sidebar-submenu collapse show" id="workers_menu">
                                                                 <li class="sidebar-menu-item ">
                                                                     <a class="sidebar-menu-button" href="/drivers">
                                                                         <span class="sidebar-menu-text">Drivers</span>
@@ -858,7 +842,7 @@
                                                                         <span class="sidebar-menu-text">Cleaners</span>
                                                                     </a>
                                                                 </li>
-                                                                <li class="sidebar-menu-item">
+                                                                <li class="sidebar-menu-item active">
                                                                     <a class="sidebar-menu-button" href="/assistant">
                                                                         <span class="sidebar-menu-text">Assistant</span>
                                                                     </a>
@@ -957,6 +941,12 @@
 
     <!-- Chart.js Samples -->
     <script src="assets/js/page.staff.js"></script>
+
+    <script>
+        $('.list tr').click(function(){
+            window.location = "details.html";
+        });
+    </script>
 
 </body>
 

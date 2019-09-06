@@ -192,6 +192,42 @@ app.get('/teachers' , (request, response) => {
     }
 })
 
+app.get('/drivers' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('drivers');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/serviceworkers' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('serviceworker');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/cleaners' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('cleaners');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/assistant' , (request, response) => {
+    if(firebase.auth().currentUser) {
+        response.render('assistant');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
 
 app.get('/addStudent' , (request, response) => {
     if(firebase.auth().currentUser) {
