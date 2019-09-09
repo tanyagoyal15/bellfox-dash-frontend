@@ -511,7 +511,8 @@
                                     </span>
                                 </a>
                                 <div class="dropdown ml-auto">
-                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i class="material-icons">more_vert</i></a>
+                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
+                                            class="material-icons">more_vert</i></a>
                                     <div class="dropdown-menu dropdown-menu-right">
                                         <div class="dropdown-item-text dropdown-item-text--lh">
                                             <div><strong>Adrian Demian</strong></div>
@@ -528,133 +529,129 @@
                             </div>
                             <div class="sidebar-heading sidebar-m-t">Menu</div>
                             <ul class="sidebar-menu">
-                                <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#dashboards_menu">
-                                            <i class="sidebar-menu-icon fa fa-chart-line"></i>
-                                            <span class="sidebar-menu-text">Dashboards</span>
-                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                                <li class="sidebar-menu-item ">
+                                    <a class="sidebar-menu-button" href="/dashboard">
+                                        <i class="sidebar-menu-icon fa fa-chart-line"></i>
+                                        <span class="sidebar-menu-text">Dashboard</span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse" id="dashboards_menu">
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="index.html">
-                                                <span class="sidebar-menu-text">Default</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item active">
-                                            <a class="sidebar-menu-button" href="staff.html">
-                                                <span class="sidebar-menu-text">CRM/Staff</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="analytics.html">
-                                                <span class="sidebar-menu-text">E-commerce</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
-
-                                <li class="sidebar-menu-item active open">
-                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#students_menu">
-                                            <i class="sidebar-menu-icon fas fa-user-alt"></i>
-                                            <span class="sidebar-menu-text">Students</span>
-                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                
+                                <li class="sidebar-menu-item ">
+                                    <a class="sidebar-menu-button" href="/students">
+                                        <i class="sidebar-menu-icon fas fa-user-alt"></i>
+                                        <span class="sidebar-menu-text">Students</span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse show" id="students_menu">
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="students.html">
-                                                <span class="sidebar-menu-text">All Students</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item active">
-                                            <a class="sidebar-menu-button" href="details.html">
-                                                <span class="sidebar-menu-text">Student Details</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="addStudent.html">
-                                                <span class="sidebar-menu-text">Add Student</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
-
-                                <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" data-toggle="collapse" href="#parents_menu">
+                
+                                <li class="sidebar-menu-item ">
+                                    <a class="sidebar-menu-button" href="/parents">
                                         <i class="sidebar-menu-icon fas fa-user-friends"></i>
                                         <span class="sidebar-menu-text">Parents</span>
-                                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse " id="parents_menu">
-                                        <li class="sidebar-menu-item active">
-                                            <a class="sidebar-menu-button" href="parents.html">
-                                                <span class="sidebar-menu-text">All Parents</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="parentsdetails.html">
-                                                <span class="sidebar-menu-text">Parent Details</span>
-                                            </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="addParent.html">
-                                                <span class="sidebar-menu-text">Add Parent</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
-
-                                <li class="sidebar-menu-item">
+                
+                                <li class="sidebar-menu-item active open">
                                     <a class="sidebar-menu-button" data-toggle="collapse" href="#staff_menu">
-                                            <i class="sidebar-menu-icon fas fa-users"></i>
-                                            <span class="sidebar-menu-text">Staff</span>
+                                        <i class="sidebar-menu-icon fas fa-users"></i>
+                                        <span class="sidebar-menu-text">Staff</span>
                                         <span class="ml-auto sidebar-menu-toggle-icon"></span>
                                     </a>
-                                    <ul class="sidebar-submenu collapse " id="staff_menu">
-                                        <li class="sidebar-menu-item active">
-                                            <a class="sidebar-menu-button" href="adminform.html">
+                                    <ul class="sidebar-submenu collapse show" id="staff_menu">
+                                        <li class="sidebar-menu-item ">
+                                            <a class="sidebar-menu-button" href="/admins">
                                                 <span class="sidebar-menu-text">Admin</span>
                                             </a>
                                         </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="principalform.html">
-                                                <span class="sidebar-menu-text">Principal</span>
+                                        <li class="sidebar-menu-item ">
+                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#management_menu">
+                                                <span class="sidebar-menu-text">Management</span>
+                                                <span class="ml-auto d-flex align-items-center">
+                                                    <span class="sidebar-menu-toggle-icon"></span>
+                                                </span>
                                             </a>
-                                        </li><li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="hodform.html">
-                                                <span class="sidebar-menu-text">HOD</span>
-                                            </a>
+                                            <ul class="sidebar-submenu collapse show" id="management_menu">
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button" href="/ctaform">
+                                                        <span class="sidebar-menu-text">CTA</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item ">
+                                                    <a class="sidebar-menu-button" href="/principal">
+                                                        <span class="sidebar-menu-text">Principal</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item ">
+                                                    <a class="sidebar-menu-button" href="/viceprincipal">
+                                                        <span class="sidebar-menu-text">Vice Principal</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item ">
+                                                    <a class="sidebar-menu-button" href="/hods">
+                                                        <span class="sidebar-menu-text">HOD</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="teachersform.html">
+                                        <li class="sidebar-menu-item ">
+                                            <a class="sidebar-menu-button" href="/teachers">
                                                 <span class="sidebar-menu-text">Teachers</span>
                                             </a>
                                         </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="workersform.html">
+                                        <li class="sidebar-menu-item ">
+                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_menu">
                                                 <span class="sidebar-menu-text">Workers</span>
+                                                <span class="ml-auto d-flex align-items-center">
+                                                    <span class="sidebar-menu-toggle-icon"></span>
+                                                </span>
                                             </a>
-                                        </li>
-                                        <li class="sidebar-menu-item">
-                                            <a class="sidebar-menu-button" href="driverform.html">
-                                                <span class="sidebar-menu-text">Drivers</span>
-                                            </a>
+                                            <ul class="sidebar-submenu collapse " id="workers_menu">
+                                                <li class="sidebar-menu-item ">
+                                                    <a class="sidebar-menu-button" href="/drivers">
+                                                        <span class="sidebar-menu-text">Drivers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item ">
+                                                    <a class="sidebar-menu-button" href="/serviceworker">
+                                                        <span class="sidebar-menu-text">Service Workers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button" href="/cleaners">
+                                                        <span class="sidebar-menu-text">Cleaners</span>
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-menu-item">
+                                                    <a class="sidebar-menu-button" href="/assistant">
+                                                        <span class="sidebar-menu-text">Assistant</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
-
+                
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="settings.html">
+                                    <a class="sidebar-menu-button" href="/settings">
                                         <i class="sidebar-menu-icon fas fa-cog"></i>
                                         <span class="sidebar-menu-text">Settings</span>
                                     </a>
                                 </li>
-    
+                
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="reports.html">
+                                    <a class="sidebar-menu-button" href="/reports">
                                         <i class="sidebar-menu-icon fas fa-file-alt"></i>
                                         <span class="sidebar-menu-text">Reports</span>
                                     </a>
                                 </li>
+                
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="/logout">
+                                        <i class="sidebar-menu-icon fas fa-file-alt"></i>
+                                        <span class="sidebar-menu-text">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                
                         </div>
                     </div>
                 </div>
