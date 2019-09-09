@@ -228,6 +228,14 @@ app.get('/assistant' , (request, response) => {
     }
 })
 
+app.get('/details', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('details');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
 
 app.get('/addStudent' , (request, response) => {
     if(firebase.auth().currentUser) {
