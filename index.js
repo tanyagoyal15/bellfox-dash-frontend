@@ -354,6 +354,15 @@ app.get('/addTeacher' , (request, response) => {
     }
 })
 
+app.get('/addAdmin', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('addAdmin');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
 app.get('/logout' , (req, res, next) => {
     firebase.auth().signOut().then(function() {
         //Log out user
