@@ -246,9 +246,9 @@ app.get('/parentdetails', (request, response) => {
     }
 })
 
-app.get('/admmindetails', (request, response) => {
+app.get('/admindetails', (request, response) => {
     if (firebase.auth().currentUser) {
-        response.render('admmindetails');
+        response.render('admindetails');
     } else {
         // alert('Please Login to Access Dashboard');
         response.redirect('/login');
