@@ -228,9 +228,54 @@ app.get('/assistant' , (request, response) => {
     }
 })
 
-app.get('/details', (request, response) => {
+app.get('/studentdetails', (request, response) => {
     if (firebase.auth().currentUser) {
-        response.render('details');
+        response.render('studentdetails');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/parentdetails', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('parentdetails');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/admmindetails', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('admmindetails');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/hoddetails', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('hoddetails');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/teacherdetails', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('teacherdetails');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
+app.get('/workerdetails', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('workerdetails');
     } else {
         // alert('Please Login to Access Dashboard');
         response.redirect('/login');
