@@ -273,6 +273,15 @@ app.get('/teacherdetails', (request, response) => {
     }
 })
 
+app.get('/driverdetails', (request, response) => {
+    if (firebase.auth().currentUser) {
+        response.render('driverdetails');
+    } else {
+        // alert('Please Login to Access Dashboard');
+        response.redirect('/login');
+    }
+})
+
 app.get('/workerdetails', (request, response) => {
     if (firebase.auth().currentUser) {
         response.render('workerdetails');
